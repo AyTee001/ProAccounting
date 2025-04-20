@@ -1,0 +1,56 @@
+# ASP.NET Core
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+.vscode/
+*.swp
+*.log
+*.ide/
+*.DS_Store
+Thumbs.db
+
+# ASP.NET Core environment files
+.env
+.env.*
+
+# Angular
+node_modules/
+dist/
+tmp/
+out-tsc/
+*.log
+*.tsbuildinfo
+
+# IDEs and editors
+.idea/
+.vscode/
+*.code-workspace
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+*.pyc
+*.class
+*.war
+*.jar
+*.swp
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
