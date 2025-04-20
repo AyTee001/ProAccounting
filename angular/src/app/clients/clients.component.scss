@@ -1,8 +1,10 @@
 .clients-bar {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px;
 }
 
 .action-button {
@@ -10,4 +12,10 @@
     border: none;
     color: var(--mat-sys-primary);
     cursor: pointer;
+}
+
+.clients-container {
+    min-width: 700px;
+    overflow-x: auto;
+    height: 100%;
 }
