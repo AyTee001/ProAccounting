@@ -12,3 +12,25 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 mat-icon {
     margin: 0 !important;
 }
+
+.section-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    color: var(--mat-sys-primary);
+    cursor: pointer;
+}
+
+.section-container {
+    min-width: 700px;
+    overflow-x: auto;
+    height: 100%;
+}

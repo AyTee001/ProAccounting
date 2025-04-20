@@ -64,12 +64,9 @@ namespace ProAccounting.Application.Services.Clients
 
         public async Task Update(UpdateClientInput input)
         {
-            var rowsAffected = await _dbContext.Database.ExecuteSqlRawAsync(
+            _ = await _dbContext.Database.ExecuteSqlRawAsync(
                 "UPDATE Clients SET Name = {0}, Email = {1}, Address = {2}, PhoneNumber = {3} WHERE Id = {4}",
                 input.Name, input.Email, input.Address!, input.PhoneNumber!, input.Id);
-
-            if (rowsAffected == 0)
-                throw new BusinessException("Client not found");
         }
     }
 }

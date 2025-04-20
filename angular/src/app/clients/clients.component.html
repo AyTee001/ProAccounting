@@ -1,7 +1,7 @@
-<div class="clients-container">
-    <div class="clients-bar">
+<div class="section-container">
+    <div class="section-bar">
         <h2>Manage your clients</h2>
-        <button mat-button (click)="createClient()"><mat-icon aria-hidden="false" aria-label="Create" fontIcon="add"></mat-icon></button>
+        <button mat-flat-button (click)="createClient()"><mat-icon aria-hidden="false" aria-label="Create" fontIcon="add"></mat-icon></button>
     </div>
     <table mat-table [dataSource]="clientsSource" class="mat-elevation-z8">
         <ng-container matColumnDef="action">
