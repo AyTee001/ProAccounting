@@ -17,10 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ProAccounting.Application\ProAccounting.Application.csproj" />
     <ProjectReference Include="..\ProAccounting.Core\ProAccounting.Core.csproj" />
     <ProjectReference Include="..\ProAccounting.Infrastructure\ProAccounting.Infrastructure.csproj" />

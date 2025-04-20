@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProAccounting.Application.Interfaces;
 using ProAccounting.Application.Services;
+using ProAccounting.Application.Services.Clients;
 
 namespace ProAccounting.Web
 {
@@ -13,14 +14,25 @@ namespace ProAccounting.Web
 
             // Add services to the container.
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(
+                        name: "Default",
+                        policy => policy.AllowAnyOrigin()
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                    );
+            });
+
+
             builder.Services.AddDbContext<ProAccountingDbContext>(opt => opt.UseSqlServer(
                     builder.Configuration.GetConnectionString("DefaultConnection")
                 ));
 
             builder.Services.AddTransient<IClientService, ClientsService>();
-            builder.Services.AddTransient<IInvoiceService, InvoiceService>();
-            builder.Services.AddTransient<ILedgerService, LedgerService>();
-            builder.Services.AddTransient<IPaymentService, PaymentService>();
+            //builder.Services.AddTransient<IInvoiceService, InvoiceService>();
+            //builder.Services.AddTransient<ILedgerService, LedgerService>();
+            //builder.Services.AddTransient<IPaymentService, PaymentService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -33,6 +45,8 @@ namespace ProAccounting.Web
             {
                 app.MapOpenApi();
             }
+
+            app.UseCors("Default");
 
             app.UseHttpsRedirection();
 

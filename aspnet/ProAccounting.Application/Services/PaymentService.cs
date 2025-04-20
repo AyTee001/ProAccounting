@@ -2,7 +2,7 @@
 
 namespace ProAccounting.Application.Services
 {
-    public class PaymentService : IPaymentService
+    public class PaymentService// : IPaymentService
     {
     }
 }
