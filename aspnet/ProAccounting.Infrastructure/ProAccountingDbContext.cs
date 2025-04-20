@@ -49,6 +49,9 @@ public partial class ProAccountingDbContext : DbContext
 
             entity.Property(e => e.PhoneNumber)
                 .HasMaxLength(20);
+
+            entity.Property(e => e.Email)
+                .HasMaxLength(255);
         });
 
         modelBuilder.Entity<Invoice>(entity =>
