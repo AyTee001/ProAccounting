@@ -11,8 +11,4 @@
     <ProjectReference Include="..\ProAccounting.Infrastructure\ProAccounting.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="SqlScripts\" />
-  </ItemGroup>
-
 </Project>

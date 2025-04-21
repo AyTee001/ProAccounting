@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProAccounting.Application.Interfaces;
 using ProAccounting.Application.Services.Clients.Dto;
-using ProAccounting.Application.Services.SharedDto;
 
 namespace ProAccounting.Application.Services.Clients
 {

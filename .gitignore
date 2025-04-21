@@ -47,8 +47,6 @@ jspm_packages/
 
 # Logs and databases
 *.log
-*.sql
-*.sqlite
 *.db
 
 # OS generated files

@@ -2,7 +2,7 @@
 
 namespace ProAccounting.Application.Services
 {
-    public class LedgerService : ILedgerService
+    public class LedgerService //: ILedgerService
     {
     }
 }

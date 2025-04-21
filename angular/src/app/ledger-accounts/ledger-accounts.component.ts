@@ -3,7 +3,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { LedgerAccountsService } from './ledger-accounts.service';
-import { LedgerAccountData, LedgerType, ledgerTypesStringMapping } from './models/ledger-accounts';
+import { LedgerAccountData, LedgerType, ledgerTypesStringMapping } from './models/ledger-account.models';
 import { take } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { EditLedgerAccountDialogComponent } from './dialogs/edit-ledger-account-dialog/edit-ledger-account-dialog.component';

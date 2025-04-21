@@ -5,7 +5,7 @@ import { MAT_DIALOG_DATA, MatDialogActions, MatDialogContent, MatDialogModule, M
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { LedgerAccountsService } from '../../ledger-accounts.service';
-import { CreateLedgerAccountInput, LedgerType, ledgerTypesStringMapping, UpdateLedgerAccountInput } from '../../models/ledger-accounts';
+import { CreateLedgerAccountInput, LedgerType, ledgerTypesStringMapping, UpdateLedgerAccountInput } from '../../models/ledger-account.models';
 import { take } from 'rxjs';
 import { MatSelectModule } from '@angular/material/select'
 

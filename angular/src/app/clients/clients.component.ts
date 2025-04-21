@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ClientsService } from './clients.service';
-import { ClientData } from './models/client-data';
+import { ClientData } from './models/client.models';
 import { take } from 'rxjs';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table'
 import { MatIconModule } from '@angular/material/icon'

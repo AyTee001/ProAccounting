@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProAccounting.Core.Entities;
 using ProAccounting.Core.Entities.Enums;
+using ProAccounting.Core.Views;
 namespace ProAccounting;
 
 public partial class ProAccountingDbContext : DbContext
@@ -31,8 +32,13 @@ public partial class ProAccountingDbContext : DbContext
 
     public virtual DbSet<Payment> Payments { get; set; }
 
+    public virtual DbSet<GetAllInvoiceData> GetAllInvoiceData { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<GetAllInvoiceData>()
+            .HasNoKey()
+            .ToView("vw_GetAllInvoiceData");
+
         modelBuilder.Entity<Client>(entity =>
         {
             entity.HasKey(e => e.Id);

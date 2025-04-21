@@ -15,7 +15,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ClientsService } from '../../clients.service';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { ClientData, CreateClientInput, UpdateClientInput } from '../../models/client-data';
+import { ClientData, CreateClientInput, UpdateClientInput } from '../../models/client.models';
 import { take } from 'rxjs';
 
 interface EditClientDialogData {

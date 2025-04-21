@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { CreateLedgerAccountInput, LedgerAccountData, UpdateLedgerAccountInput } from './models/ledger-accounts';
+import { CreateLedgerAccountInput, LedgerAccountData, UpdateLedgerAccountInput } from './models/ledger-account.models';
 
 @Injectable({
 	providedIn: 'root'
