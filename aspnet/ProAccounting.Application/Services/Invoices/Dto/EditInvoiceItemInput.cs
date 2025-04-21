@@ -1,7 +1,9 @@
 ﻿namespace ProAccounting.Application.Services.Invoices.Dto
 {
-    public class CreateInvoiceItemInput
+    public class EditInvoiceItemInput
     {
+        public long? Id { get; set; }
+
         public string Description { get; set; } = null!;
 
         public int Quantity { get; set; }

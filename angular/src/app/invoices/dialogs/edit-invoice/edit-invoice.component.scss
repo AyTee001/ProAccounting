@@ -1,0 +1,24 @@
+.invoice-form-container {
+    min-width: 200px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+td > mat-form-field{
+    margin-top: 12px;
+}
+
+.invoice-items-array {
+    max-width: 100%;
+    overflow: auto;
+    max-height: 340px;
+}
+
+.invoice-items-actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 24px;
+}

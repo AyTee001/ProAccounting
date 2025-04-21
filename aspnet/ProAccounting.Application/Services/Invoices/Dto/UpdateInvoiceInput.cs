@@ -8,6 +8,6 @@
 
         public DateTime DueDate { get; set; }
 
-        public ICollection<UpdateInvoiceItemInput> InvoiceItems { get; set; } = [];
+        public ICollection<EditInvoiceItemInput> InvoiceItems { get; set; } = [];
     }
 }

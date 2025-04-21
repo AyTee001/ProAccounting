@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ProAccounting.Application.Interfaces;
 using ProAccounting.Application.Services;
 using ProAccounting.Application.Services.Clients;
+using ProAccounting.Application.Services.Invoices;
 using ProAccounting.Application.Services.LedgerAccounts;
 
 namespace ProAccounting.Web
@@ -33,7 +34,7 @@ namespace ProAccounting.Web
 
             builder.Services.AddTransient<IClientService, ClientsService>();
             builder.Services.AddTransient<ILedgerAccountService, LedgerAccountService>();
-
+            builder.Services.AddTransient<IInvoiceService, InvoiceService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

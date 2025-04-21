@@ -6,7 +6,7 @@ namespace ProAccounting.Core.Views
     {
         public long Id { get; set; }
 
-        public int ClientId { get; set; }
+        public int Client { get; set; }
 
         public DateTime Date { get; set; }
 
